@@ -4,7 +4,7 @@
  let i ="";
 
 function reset () {
-	location.reload();
+	
 	// let i = 0;
 	// $('#my-progress-bar').width('0%');
 	 // init ();
@@ -46,7 +46,8 @@ function increaseProgressBy7protsent() {
 
 function checking() {
 if (i >= 100 ) {
-	  			discard();
+		$('#my-progress-bar').width('100%');
+	  	discard();
 	  			// console.log(i);
 	} 
 	
@@ -54,8 +55,7 @@ if (i >= 100 ) {
 
 function discard (){ 
 	if (confirm('Достигнуто 100%. Начать с начала?')) {
-		// delete i;
-		reset ();
+		location.reload();
 		// console.log(i);
 	} else {
 		alert('Вы удачно накачали мой progress-bar');
