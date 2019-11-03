@@ -1,14 +1,11 @@
-
-
-
  let i ="";
 
-function reset () {
+// function reset () {
 	
-	// let i = 0;
-	// $('#my-progress-bar').width('0%');
-	 // init ();
-}
+// 	// let i = 0;
+// 	// $('#my-progress-bar').width('0%');
+// 	 // init ();
+// }
 
 function init() {
 	i = 0;
@@ -47,7 +44,7 @@ function increaseProgressBy7protsent() {
 function checking() {
 if (i >= 100 ) {
 		$('#my-progress-bar').width('100%');
-	  	discard();
+		discard();
 	  			// console.log(i);
 	} 
 	
@@ -64,8 +61,5 @@ function discard (){
 	// console.log(i);
 
 }
-
-
-
 
 $(document).ready(init);
